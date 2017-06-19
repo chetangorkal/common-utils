@@ -33,14 +33,14 @@ public class SimpleExcelReaderExample {
 		FileInputStream inputStream = new FileInputStream(new File(excelFilePath));
 
 		Workbook workbook = new XSSFWorkbook(inputStream);
+		excelReader.readMWTestimonial(workbook.getSheetAt(0));
+		workbook.close();
+		inputStream.close();
 		// excelReader.readStaffSheet(staffSheet);
 		// excelReader.readInfraSheet(workbook.getSheetAt(1));
 		// excelReader.readEquipmentSheet(workbook.getSheetAt(0));
 		// excelReader.readLinkagesSupportorSheet(workbook.getSheetAt(0));
 		// excelReader.readJnvcSheet(workbook.getSheetAt(0));
-		excelReader.readMWTestimonial(workbook.getSheetAt(0));
-		workbook.close();
-		inputStream.close();
 	}
 
 	private void readJnvcSheet(Sheet jnvcSheet) {
