@@ -13,6 +13,6 @@ public interface ScoreCardConstants {
 	String EMAIL_SUBJECT = "Java programming - Weekly feedback.";
 	String EMAIL_HTML_TEXT = "PFA giving feedback on your performance<br/>"
 			+ "Please reach out to the mentor if you have any concerns<br/>";
-	String SENDER_PASSWORD = "Hardwork.01";
+	String SENDER_PASSWORD = "**";
 
 }
